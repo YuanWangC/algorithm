@@ -1,23 +1,11 @@
-package algorithm;
-
+package Basic;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import Basic.TreeNode;
 
 
-class TreeNode{
-	int val;
-	TreeNode left;
-	TreeNode right;
-	TreeNode(int value){
-		this.val = value;
-		this.left = null;
-		this.right = null;
-	}
-	TreeNode(){
-	}
-}
 
 public class PrintBinaryTreeDeque {
 	public TreeNode BuildTree() {
@@ -39,35 +27,35 @@ public class PrintBinaryTreeDeque {
 		List<Integer> temp;
 		Deque<TreeNode> dq = new LinkedList<>();
 		dq.addLast(root);
-		//Ã¿´Î´¦ÀíÁ½²ã
+		//Ã¿ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		while(!dq.isEmpty()) {
-			//ÆæÊý²ã
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			int size = dq.size();
 			temp = new ArrayList<>();
-			//´¦Àíµ±Ç°ËùÓÐ¶ÓÁÐÖÐµÄ½Úµã£¨ÊýÄ¿ÎªÆæÊý²ã½ÚµãÊý£©
+			//ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ÐµÄ½Úµã£¨ï¿½ï¿½Ä¿Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
 			for(int i = 0;i<size;i++) {
-				//´ÓÍ·²¿¶Á³ö
+				//ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				TreeNode cur = dq.removeFirst();
 				temp.add(cur.val);
-				//´ÓÎ²²¿Ìí¼Ó
+				//ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½
 				if(cur.left!=null)
 					dq.addLast(cur.left);
 				if(cur.right!=null)
 					dq.addLast(cur.right);
 			}
 			res.add(temp);
-			//Ã»ÓÐÅ¼Êý²ãbreak
+			//Ã»ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ï¿½break
 			if(dq.isEmpty())break;
-			//´¦ÀíÅ¼Êý²ã
+			//ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ï¿½
 			temp = new LinkedList<>();
 			size = dq.size();
-			//´¦Àíµ±Ç°ËùÓÐ¶ÓÁÐÖÐµÄ½Úµã£¨ÊýÄ¿ÎªÅ¼Êý²ã½ÚµãÊý£©
+			//ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ÐµÄ½Úµã£¨ï¿½ï¿½Ä¿ÎªÅ¼ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
 			for(int i = 0;i<size;i++) {
-				//´ÓÎ²²¿¶Á³ö
+				//ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				TreeNode cur = dq.removeLast();
 				temp.add(cur.val);
-				//´ÓÍ·²¿Ìí¼Ó
-				//×¢ÒâÕâÒ»²ãÕûÌåÊÇ´ÓÓÒÏò×óÌí¼Ó£¨ÕâÑù¶Á³ö²ÅÊÇ´Ó×óÏòÓÒµÄ£©
+				//ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½
+				//×¢ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒµÄ£ï¿½
 				if(cur.right!=null)
 					dq.addFirst(cur.right);
 				if(cur.left!=null)

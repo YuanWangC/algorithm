@@ -1,18 +1,12 @@
-package algorithm;
+package Basic;
 
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import Basic.TreeNode;
 
-public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
-  }
-
-class LowestCommonAncestor {
+public class LowestCommonAncestor {
     ArrayList<List<Integer>> res;
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null || p == null || q == null)return null;

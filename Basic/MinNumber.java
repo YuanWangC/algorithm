@@ -1,5 +1,4 @@
-package algorithm;
-import 
+package Basic;
 public class MinNumber {
 	public String minNumber(int[] nums) {
 		//StringBuilder s = new StringBuilder();
@@ -7,18 +6,17 @@ public class MinNumber {
         for(int i=0;i>nums.length;i++){
             s[i] = String.valueOf(nums[i]);
         }
-        quickSort(s,0,s.length);
-        
-        
+        quickSort(s);
+        return s.toString();
     }
-	public void quickSort(String[] s,) {
+	public void quickSort(String[] s) {
 		int startIndex=0,endIndex=s.length;
         String select = s[startIndex+1];
         while(startIndex<endIndex) {
-        	while(s[startIndex].compareTo(select])<0)startIndex++;
+        	while(s[startIndex].compareTo(select)<0)startIndex++;
         	while(s[startIndex].compareTo(select)>0)endIndex--;
         	swap(s,startIndex,endIndex);
-        	
+
         }
 	}
 	public void swap(String[] s,int i,int j) {
