@@ -6,9 +6,11 @@ public class PartSorting {
     public int[] subSort(int[] array) {
         int left = -1,right = -1;
         if(array.length == 1)return new int[]{left,right};
+//        左边从尾部来，右边从头部来
         int min = array.length-1,max = 0;
         for(int i=0;i<array.length;i++){
-            if(array[i]<=array[max]){
+//            使用<=等号会扩大范围
+            if(array[i]<array[max]){
                 right = i;
             }
             else {
@@ -16,7 +18,8 @@ public class PartSorting {
             }
         }
         for(int i=array.length-1;i>=0;i--){
-            if(array[i]>=array[min]){
+//            使用>=等号会扩大范围
+            if(array[i]>array[min]){
                 left = i;
             }
             else {
