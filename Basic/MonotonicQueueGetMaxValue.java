@@ -42,6 +42,8 @@ public class MonotonicQueueGetMaxValue {
         System.out.println(param_3);
         param_1 = obj.max_value();
         System.out.println(param_1);
+        String s = "a";
+        String s2 = s.substring(0);
     }
 }
 
