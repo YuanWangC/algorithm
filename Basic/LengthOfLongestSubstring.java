@@ -29,21 +29,41 @@ public class LengthOfLongestSubstring {
         // System.out.println(end+" "+start);
         return max;
     }
+    public int lengthOfLongestSubstringDP(String s) {
+        if(s.length() <=1)return s.length();
+        int[] dp = new int[s.length()+1];
+        dp[0] = 0;
+        dp[1] = 1;
+        HashMap<Character,Integer> map= new HashMap();
+        map.put(s.charAt(0),0);
+        int pre = -1;
+        for(int i=2;i<=s.length();i++){
+            if(map.containsKey(s.charAt(i-1))){
+                // System.out.println("contains "+s.charAt(i-1));
+                pre = Math.max(pre,map.get(s.charAt(i-1))+1);
+                // System.out.println(pre);
+                map.put(s.charAt(i-1),i-1);
+                dp[i] = i-pre;
+            }
+            else {
+                map.put(s.charAt(i-1),i-1);
+                dp[i] = dp[i-1]+1;
+            }
+        }
+        // System.out.println(Arrays.toString(dp));
+        int max = 0;
+        for(int j:dp){
+            // System.out.println(j);
+            max = max<j?j:max;
+        }
+        return max;
+    }
     public static void main(String[] args){
         LengthOfLongestSubstring obj = new LengthOfLongestSubstring();
         LengthOfLongestSubstring obj2 = new LengthOfLongestSubstring();
         System.out.println(obj.equals(obj2));
-        int len = obj.lengthOfLongestSubstring("abdcaef");
-        System.out.println(len);
-        int a = 10000;
-        Integer a2 = new Integer(10000);
-        Double a3 = new Double(10000.0);
-        System.out.println(a2.equals(a3));
-//        System.out.println(a3 == a2);
-        double b = 10000.0;
-        System.out.println(b == a);
-        String s = null;
-        Integer i = null;
-        System.out.println(i);
+        int len1 = obj.lengthOfLongestSubstring("abdcaef");
+        int len2 = obj.lengthOfLongestSubstringDP("abdcaef");
+        System.out.println(len1+" "+len2);
     }
 }
