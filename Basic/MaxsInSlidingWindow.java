@@ -1,7 +1,9 @@
 package Basic;
 
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 public class MaxsInSlidingWindow {
     public int[] maxSlidingWindow1(int[] nums, int k) {
@@ -62,11 +64,37 @@ public class MaxsInSlidingWindow {
         }
         return maxs;
     }
+//    单调双端队列
+    public int[] maxSlidingWindow3(int[] nums, int k){
+        if(nums.length ==0 || k==0)return new int[0];
+        Deque<Integer> que = new LinkedList<>();
+        int[] res = new int[nums.length-k+1];
+//        base case: 窗口未成
+        for(int i=0;i<k;i++){
+            while(!que.isEmpty() && que.peekLast()<nums[i])
+                que.removeLast();
+            que.addLast(nums[i]);
+        }
+        res[0] = que.peekFirst();
+
+        for(int i=1;i<res.length;i++){
+//            删除上一个窗口保留的最大值
+            if(que.peekFirst() == nums[i-1])
+                que.removeFirst();
+//            从后方删除所有小于当前新加入的nums[i+k]的值
+            while(!que.isEmpty() && que.peekLast()<nums[i+k-1])
+                que.removeLast();
+            que.addLast(nums[i+k-1]);
+            res[i] = que.peekFirst();
+        }
+        return res;
+    }
+
     public static void main(String[] args){
         MaxsInSlidingWindow obj = new MaxsInSlidingWindow();
-        int[] arr = {1,3,-1,-3,5,3,6,7};
+        int[] arr = {1,3,-1,-3,5,3,4,1};
         int k = 3;
-        int[] maxs = obj.maxSlidingWindow2(arr,k);
+        int[] maxs = obj.maxSlidingWindow3(arr,k);
         System.out.println(Arrays.toString(maxs));
     }
 }
