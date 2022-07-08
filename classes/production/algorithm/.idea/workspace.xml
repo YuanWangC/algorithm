@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773ddd30-114d-460e-93ab-08078231cfa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic/CoinChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/CoinChange1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/NumberOfPermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/LongestPalindromicSubsequence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     <property name="project.structure.side.proportion" value="0.12531328" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.NumberOfPermutation">
+  <component name="RunManager" selected="Application.LongestPalindromicSubsequence">
     <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Basic.CoinChange" />
       <module name="algorithm" />
@@ -78,8 +75,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NonOverlappingIntervals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.NonOverlappingIntervals" />
+    <configuration name="DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.DecodeString" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongestPalindromicSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.LongestPalindromicSubsequence" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -104,26 +114,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Package01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.Package01" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestPalindromicSubsequence" />
+        <item itemvalue="Application.DecodeString" />
         <item itemvalue="Application.NumberOfPermutation" />
         <item itemvalue="Application.CoinChange1" />
         <item itemvalue="Application.CoinChange" />
-        <item itemvalue="Application.Package01" />
-        <item itemvalue="Application.NonOverlappingIntervals" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +152,8 @@
       <workItem from="1656301186491" duration="30667000" />
       <workItem from="1656673239607" duration="4841000" />
       <workItem from="1656903289123" duration="18423000" />
+      <workItem from="1657179433613" duration="2299000" />
+      <workItem from="1657255870286" duration="942000" />
     </task>
     <servers />
   </component>
