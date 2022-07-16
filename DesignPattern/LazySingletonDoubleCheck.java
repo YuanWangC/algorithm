@@ -1,7 +1,7 @@
 package DesignPattern;
 
 public class LazySingletonDoubleCheck {
-    private static LazySingletonDoubleCheck lazysingletondoublecheck;
+    private static volatile LazySingletonDoubleCheck lazysingletondoublecheck;
     private LazySingletonDoubleCheck(){}
     public static LazySingletonDoubleCheck getInstance(){
         if(lazysingletondoublecheck == null){

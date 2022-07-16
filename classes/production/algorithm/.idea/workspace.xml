@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773ddd30-114d-460e-93ab-08078231cfa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/HappyNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mutiThread/newThreads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern/LazySingletonDoubleCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/LazySingletonDoubleCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/DesignPattern/LazySingletonDoubleCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/DesignPattern/LazySingletonDoubleCheck.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +54,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/algorithm"
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/algorithm/mutiThread",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HappyNum">
+  <component name="RunManager" selected="Application.newThread">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -68,21 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BackspaceStringCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.BackspaceStringCompare" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="String.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HappyNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.HappyNum" />
+    <configuration name="LongestComSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.LongestComSubSequence" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InOutTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.InOutTest" />
+    <configuration name="NumMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.NumMatrix" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.KMP" />
+    <configuration name="RestoreIpAddresses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.RestoreIpAddresses" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxsInSlidingWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.MaxsInSlidingWindow" />
+    <configuration name="ShortestSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.ShortestSubArray" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -133,13 +123,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="newThread" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPattern.LazySingletonDoubleCheck" />
+      <module name="algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mutiThread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.newThread" />
+      <item itemvalue="Application.LongestComSubSequence" />
+      <item itemvalue="Application.NumMatrix" />
+      <item itemvalue="Application.RestoreIpAddresses" />
+      <item itemvalue="Application.ShortestSubArray" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HappyNum" />
-        <item itemvalue="Application.InOutTest" />
-        <item itemvalue="Application.BackspaceStringCompare" />
-        <item itemvalue="Application.MaxsInSlidingWindow" />
-        <item itemvalue="Application.KMP" />
+        <item itemvalue="Application.newThread" />
+        <item itemvalue="Application.LongestComSubSequence" />
+        <item itemvalue="Application.RestoreIpAddresses" />
+        <item itemvalue="Application.ShortestSubArray" />
+        <item itemvalue="Application.NumMatrix" />
       </list>
     </recent_temporary>
   </component>

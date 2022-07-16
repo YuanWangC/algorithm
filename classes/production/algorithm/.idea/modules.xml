@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algorithm.iml" filepath="$PROJECT_DIR$/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mutiThread/mutiThread.iml" filepath="$PROJECT_DIR$/mutiThread/mutiThread.iml" />
     </modules>
   </component>
 </project>
