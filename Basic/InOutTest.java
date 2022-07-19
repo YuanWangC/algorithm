@@ -109,6 +109,13 @@ public class InOutTest {
 //                  System.out.print(s[i]+",");
 //              System.out.println(s[s.length-1]);
 //          }
+//        int类型二维数组输入，空格分开
+//        int n = in.nextInt();
+//        int[][] matrix = new int[n][n];
+//        for(int i=0;i<n;i++){
+//            for(int j=0;j<n;j++)
+//                matrix[i][j] = in.nextInt();
+//        }
     }
 }
 
