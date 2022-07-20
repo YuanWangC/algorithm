@@ -2,11 +2,15 @@ import java.util.ArrayDeque;
 
 class Node extends TreeNode{
     Node next;
+    Node left;
+    Node right;
     public Node(){
         super();
     }
     public Node(int value){
         super(value);
+        this.left = null;
+        this.right = null;
         this.next = null;
     }
     public static void travel(Node root){
@@ -35,13 +39,13 @@ class Node extends TreeNode{
                 if(index<s.length && !s[index].equals("null")){
 //                    System.out.println("node: "+s[index]);
                     cur.left = new Node(Integer.parseInt(s[index]));
-                    que.offer((Node) cur.left);
+                    que.offer(cur.left);
                 }
                 index++;
                 if(index<s.length && !s[index].equals("null")){
 //                    System.out.println("node: "+s[index]);
                     cur.right = new Node(Integer.parseInt(s[index]));
-                    que.offer((Node) cur.right);
+                    que.offer(cur.right);
                 }
                 index++;
             }
@@ -63,22 +67,34 @@ public class PopulatingNextRightPointersInEachNode {
             Node temp = cur;
             while(temp!=null){
                 // if(temp.left!=null && temp.right!=null)
-                ((Node)temp.left).next = (Node) temp.right;
+                temp.left.next = temp.right;
                 if(temp.next!=null)
-                    ((Node)temp.right).next= (Node) temp.next.left;
+                    temp.right.next= temp.next.left;
                 temp = temp.next;
             }
-            cur = (Node)cur.left;
+            cur = cur.left;
         }
         return root;
     }
     public static void main(String[] args){
         PopulatingNextRightPointersInEachNode obj = new PopulatingNextRightPointersInEachNode();
         String[] s = {"1","2","3","4","5","6","7"};
-        Node root = Node.Build(s);
-//        子类实例自动转换为父类，作为父类方法的形参
-//        TreeNode.Pretravel(root);
+
+//        TreeNode r = new TreeNode();
+//        TreeNode.Build(r,s);
+//        System.out.println(r instanceof Node);   //false
+//        父类实例不可以强制转换为子类，来调用子类方法
+//        Node.travel((Node)r);   //ClassCastException
+
+        Node root = new Node();
+        TreeNode.Build(root,s);
+//        Node.Build(s);    //子类调用自己的方法
 //        System.out.println(root instanceof TreeNode);   //true
+//        子类实例自动转换为父类，可以作为父类方法的形参
+        if(root instanceof TreeNode)
+            TreeNode.Pretravel(root);
+
+        //子类自己的方法
         Node root2 = obj.connect(root);
         Node.travel(root2);
     }

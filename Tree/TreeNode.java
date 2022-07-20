@@ -10,10 +10,10 @@ public class TreeNode{
         this.right = null;
     }
     TreeNode(){}
-    public static TreeNode layerOrder(String[] s){
+    public static TreeNode layerOrder(TreeNode root,String[] s){
         if(s.length==0 || s[0].equals("null"))return null;
         ArrayDeque<TreeNode> que= new ArrayDeque<>();
-        TreeNode root = new TreeNode(Integer.parseInt(s[0]));
+        root.val = Integer.parseInt(s[0]);
         que.offer(root);
         int index= 1;
         while(!que.isEmpty()){
@@ -36,10 +36,9 @@ public class TreeNode{
         }
         return root;
     }
-    public static TreeNode Build(String[] arr){
-        if(arr.length == 0)return null;
-        TreeNode root = layerOrder(arr);
-        return root;
+    public static void Build(TreeNode root,String[] arr){
+        if(arr.length == 0)return;
+        root = layerOrder(root,arr);
     }
     public static void Pretravel(TreeNode t){
         if(t == null){
@@ -54,7 +53,8 @@ public class TreeNode{
 //        String[] s = {"1","2","3","4","null","null","null"};
         //String[] s = {"1","2","3","4","5","6","7"};
         String[] s = {"2","null","3","null","4","null","5","null","6"};
-        TreeNode root = TreeNode.Build(s);
+        TreeNode root = new TreeNode();
+        TreeNode.Build(root,s);
         TreeNode.Pretravel(root);
     }
 

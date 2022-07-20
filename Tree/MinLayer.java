@@ -24,7 +24,8 @@ public class MinLayer {
 //        String[] s = {"3","9","20","null","null","15","7"};
         String[] s = {"2","null","3","null","4","null","5","null","6"};
         MinLayer obj = new MinLayer();
-        TreeNode root = TreeNode.Build(s);
+        TreeNode root =new TreeNode();
+        TreeNode.Build(root,s);
 //        TreeNode.Pretravel(root);
         int res = obj.minDepth(root);
         System.out.println(res);

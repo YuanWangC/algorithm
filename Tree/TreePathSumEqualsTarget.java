@@ -12,7 +12,9 @@ public class TreePathSumEqualsTarget {
     public static void main(String[] args){
         TreePathSumEqualsTarget obj = new TreePathSumEqualsTarget();
         String[] s = {"5","4","8","11","null","13","4","7","2","null","null","null","1"};
-        TreeNode root = TreeNode.Build(s);
+
+        TreeNode root = new TreeNode();
+        TreeNode.Build(root,s);
         int target = 22;
         boolean res = obj.dfs(root,target);
         System.out.println(res);
