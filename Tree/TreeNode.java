@@ -42,12 +42,25 @@ public class TreeNode{
     }
     public static void Pretravel(TreeNode t){
         if(t == null){
-            System.out.println("null");
+//            System.out.println("null");
             return;
         }
         System.out.println(t.val);
         Pretravel(t.left);
         Pretravel(t.right);
+    }
+
+    public static void Posttravel(TreeNode t){
+        if(t == null)return;
+        Posttravel(t.left);
+        Posttravel(t.right);
+        System.out.println(t.val);
+    }
+    public static void Intravel(TreeNode t){
+        if(t == null)return;
+        Intravel(t.left);
+        System.out.println(t.val);
+        Intravel(t.right);
     }
     public static void main(String[] args){
 //        String[] s = {"1","2","3","4","null","null","null"};
