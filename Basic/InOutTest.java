@@ -1,4 +1,5 @@
 package Basic;
+import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Scanner;
 //输入包含空格的字符串，就需要使用nextLine
@@ -7,11 +8,11 @@ public class InOutTest {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 //        多组空格分割的两个整数 （无行数，结束字符限制）
-        while(in.hasNextInt()){
-            long a = in.nextInt();
-            int b = in.nextInt();
-            System.out.println(a+b);
-        }
+//        while(in.hasNextInt()){
+//            long a = in.nextInt();
+//            int b = in.nextInt();
+//            System.out.println(a+b);
+//        }
 //        第一行组数接空格分割的两个正整数 （行数限制）
 //        int t = in.nextInt();
 //        for(int i=0;i<t;i++){
@@ -88,7 +89,10 @@ public class InOutTest {
 //                第一行个数第二行字符串(2)
 //        int num = in.nextInt();
 //        in.nextLine();
-//        String[] s = in.nextLine().split(" ");
+//        in.nextLine();
+//        String s1 = in.nextLine();
+//        System.out.println(s1);
+//        String[] s = s1.split(" ");
 //        Arrays.sort(s);
 //        for (int i = 0; i < s.length; i++) {
 //            System.out.print(s[i] + " ");
@@ -116,6 +120,21 @@ public class InOutTest {
 //            for(int j=0;j<n;j++)
 //                matrix[i][j] = in.nextInt();
 //        }
+//        输入char类型二维数组,m行n列
+            int m = in.nextInt();
+            int n = in.nextInt();
+//            in.nextLine();
+//            in.nextLine();
+            char[][] arr = new char[m][n];
+            for(int i=0;i<m;i++){
+                for(int j=0;j<n;j++){
+                    arr[i][j] = in.next().charAt(0);
+                }
+
+            }
+            for(int i=0;i<m;i++){
+                System.out.println(Arrays.toString(arr[i]));
+            }
     }
 }
 

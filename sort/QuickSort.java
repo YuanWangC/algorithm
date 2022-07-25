@@ -1,5 +1,3 @@
-import org.w3c.dom.css.CSSStyleDeclaration;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
