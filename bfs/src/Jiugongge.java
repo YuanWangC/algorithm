@@ -1,7 +1,4 @@
-package Basic;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Jiugongge {
     int[] line = {0,1,2};
@@ -57,7 +54,31 @@ public class Jiugongge {
         int[] arr = {10,36,75,225,30,4,12,25,90};
         Jiugongge obj = new Jiugongge();
         obj.dfs(arr);
-        for(List<Integer> r:obj.res)
-            System.out.println(r);
+        int[][] arrRes = new int[obj.res.size()][9];
+        int index = 0;
+        for(List<Integer> r:obj.res){
+            arrRes[index++] = r.stream().mapToInt(Integer::intValue).toArray();
+        }
+        Arrays.sort(arrRes,(a,b)->{
+            int i = 0;
+            while(i<9){
+                if(a[i]!=b[i])return a[i]-b[i];
+                i++;
+            }
+            return 0;
+        });
+//        Arrays.sort(arrRes,new resComparator());
+        for(int[] a:arrRes)
+            System.out.println(Arrays.toString(a));
+    }
+}
+class resComparator implements Comparator<int[]>{
+    @Override
+    public int compare(int[] o1, int[] o2) {
+        for(int i=0;i<o1.length;i++){
+            if(o1[i]<o2[i])return o1[i]-o2[i];
+            if(o1[i]>o2[i])return o2[i]-o1[i];
+        }
+        return 0;
     }
 }
