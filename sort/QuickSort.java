@@ -7,6 +7,78 @@ public class QuickSort {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+    public void qsort1(int[] arr,int left,int right){
+        if(right<=left)return;
+//        int pos = partitionEnd(arr,left,right);
+//        qsort1(arr,left,pos-1);
+//        qsort1(arr,pos+1,right);
+
+        int[] pos = ThreepartitionEnd(arr,left,right);
+//        int[] pos = ThreePartitionLeft(arr,left,right,arr[right]);
+        qsort1(arr,left,pos[0]-1);
+        qsort1(arr,pos[1]+1,right);
+    }
+    public int partitionStart(int[] arr,int left,int right){
+        int start = left,end = right;
+        int mid = (left+right)/2;
+        int target = arr[mid];
+        swap(arr,mid,left);
+        while(left<right){
+            while(left<right && arr[right]>=target){
+                right--;
+            }
+            while(left<right && arr[left]<=target){
+                left++;
+            }
+            if(left<right)
+                swap(arr,left,right);
+        }
+        System.out.println(Arrays.toString(arr));
+        swap(arr,right,start);
+        return left;
+    }
+
+    public int partitionEnd(int[] arr,int left,int right){
+        int end = right;
+        int mid = (left+right)/2;
+        int target = arr[mid];
+        swap(arr,mid,end);
+        while(left<right){
+            while(left<right && arr[left]<=target){
+                left++;
+            }
+            while(left<right && arr[right]>=target){
+                right--;
+            }
+            if(left<right)
+                swap(arr,left,right);
+        }
+        System.out.println(Arrays.toString(arr));
+        swap(arr,right,end);
+        return right;
+    }
+
+    public int[] ThreepartitionEnd(int[] arr,int left,int right){
+        int end = right;
+        int mid = left+(int)(Math.random()*(right-left+1));
+        int target = arr[mid];
+        swap(arr,mid,end);
+        int less = left-1,more = end;
+        int index = left;
+        while(index<more){
+            if(arr[index] > target){
+                swap(arr,index,--more);
+            }
+            else if(arr[index] < target){
+                swap(arr,index++,++less);
+            }
+            else if(arr[index] == target)
+                index++;
+        }
+        swap(arr,more,end);
+        return new int[]{less+1,more};
+    }
+
     public void qsort(int[] arr,int start,int end){
         if(start>=end)return;
         System.out.println(start+" "+end+" "+arr[end]);
@@ -83,16 +155,18 @@ public class QuickSort {
     }
     public static void main(String[] args){
         QuickSort obj = new QuickSort();
-        Scanner in = new Scanner(System.in);
-        int k = in.nextInt();
-        int[] arr = new int[k];
-        for(int i=0;i<k;i++){
-            arr[i] = in.nextInt();
-        }
+//        Scanner in = new Scanner(System.in);
+//        int k = in.nextInt();
+//        int[] arr = new int[k];
+//        for(int i=0;i<k;i++){
+//            arr[i] = in.nextInt();
+//        }
+        int[] arr = {100,12,35,31,24,23,10,55,11};
         System.out.println(Arrays.toString(arr));
         long start1 = System.currentTimeMillis();
         if(arr.length>1)
-            obj.qsort(arr,0,arr.length-1);
+//            obj.qsort(arr,0,arr.length-1);
+            obj.qsort1(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
         long end1 = System.currentTimeMillis();
         System.out.println(end1-start1);

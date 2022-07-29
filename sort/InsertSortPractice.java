@@ -12,6 +12,7 @@ public class InsertSortPractice {
             }
             arr[j] = temp;
         }
+        System.out.println(insertCount);
         System.out.println(Arrays.toString(arr));
     }
     public static void main(String[] args){
