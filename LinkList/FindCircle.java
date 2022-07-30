@@ -13,13 +13,13 @@ public class FindCircle {
         }
         System.out.println(slow.value+" "+fast.value);
         slow = head;
-//        1.求环的入口
+//        1.求环的入口：链表头部到环的入口，与相遇点到环的入口是一样长的
 //        while(slow!=fast){
 //            slow = slow.next;
 //            fast = fast.next;
 //        }
 
-//        2.或者，增添一步计算环的长度
+//        2.或者，增添一步计算环的长度，即：链表头部到相遇点的长度
         while(slow!=fast){
             circleLength++;
             slow = slow.next;

@@ -1,6 +1,3 @@
-package ActualCombat;
-
-
 public class HeapSituationTest {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("step 1: ");

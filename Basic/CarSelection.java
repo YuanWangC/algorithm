@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class CarSelection {
     int max = 0;
     int days;
-    public void bfs(int arr1[],int i,int[] arr2, int sum,char action){
-//        System.out.println(i+" "+action);
+    public void dfs(int arr1[],int i,int[] arr2, int sum,char action){
+        System.out.println(i+" "+action);
         if(i>=days)return;
         if(i==days-1){
             if(action == 'A')sum+=arr1[i];
@@ -19,19 +19,19 @@ public class CarSelection {
         }
         if (action == 'A') {
             sum += arr1[i];
-            bfs(arr1, i + 1, arr2, sum, 'A');
-            bfs(arr1, i + 2, arr2, sum, 'B');
+            dfs(arr1, i + 1, arr2, sum, 'A');
+            dfs(arr1, i + 2, arr2, sum, 'B');
         } else if (action == 'B') {
             sum += arr2[i];
-            bfs(arr1, i + 1, arr2, sum, 'B');
-            bfs(arr1, i + 2, arr2, sum, 'A');
+            dfs(arr1, i + 1, arr2, sum, 'B');
+            dfs(arr1, i + 2, arr2, sum, 'A');
         }
     }
     public int chose1(int n,int arr1[],int[] arr2){
         days = n;
         if(arr1[0]>arr2[0])
-            bfs(arr1,0,arr2,0, 'A');
-        else bfs(arr1,0,arr2,0,'B');
+            dfs(arr1,0,arr2,0, 'A');
+        else dfs(arr1,0,arr2,0,'B');
         return max;
     }
     public int chose2(int n,int arr1[],int[] arr2){
@@ -60,6 +60,7 @@ public class CarSelection {
         int k=4;
         int[] arr1 = {11,2,2,9};
         int[] arr2 = {4,1,21,23};
+
         CarSelection obj = new CarSelection();
         long start = System.currentTimeMillis();
         int res1 = obj.chose1(k,arr1,arr2);

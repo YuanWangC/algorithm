@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /*
     剪枝，剪去二叉树中所有节点为0的子树
@@ -20,6 +21,12 @@ public class PruneTree {
         TreeNode root = new TreeNode();
         TreeNode.Build(root ,arr);
         root = obj.pruneTree(root);
-        TreeNode.Pretravel(root);
+//        TreeNode.Pretravel(root);
+        ConcurrentHashMap<Integer,Integer> memo = new ConcurrentHashMap();
+        memo.put(1,2);
+        int old = memo.put(1,5);
+        int old2 = memo.put(2,5);
+        System.out.println(old);
+        System.out.println(old2);
     }
 }
