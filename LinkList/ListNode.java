@@ -15,6 +15,15 @@ public class ListNode {
             cur = cur.next;
         }
     }
+    public static ListNode build(int[] arr,ListNode head){
+        head.value = arr[0];
+        ListNode cur = head;
+        for(int i=1;i<arr.length;i++){
+            cur.next = new ListNode(arr[i]);
+            cur = cur.next;
+        }
+        return head;
+    }
     public  static void main(String[] args){
         ListNode head = new ListNode();
         int[] arr = {1,2,3,4,5};

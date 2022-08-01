@@ -1,3 +1,5 @@
+package String.parentheses;
+
 class AddParenthesesDerivation {
     public int minInsertions(String s) {
         if(s.length() == 1 && s.charAt(0) == '(')return 2;

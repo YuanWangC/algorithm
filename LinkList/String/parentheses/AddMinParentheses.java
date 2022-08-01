@@ -1,3 +1,5 @@
+package String.parentheses;
+
 class AddMinParentheses{
     public int minAddToMakeValid(String s) {
         if(s.length() ==1)return 1;
