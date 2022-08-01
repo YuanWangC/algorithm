@@ -22,6 +22,7 @@ public class LongestNonRepeatSubString {
                 window.put(d,window.get(d)-1);
             }
             if(max<right-left){
+//                此处统计长度是左闭右开的
                 max = right-left;
 //                System.out.println(s.substring(left,right));
             }
@@ -59,6 +60,25 @@ public class LongestNonRepeatSubString {
         int max = 0;
         for(int k:dp)
             max = k>max?k:max;
+        return max;
+    }
+    public int lengthOfLongestSubstring3(String s) {
+        HashMap<Character,Integer> memo = new HashMap();
+        int pre = 0;
+        int max = 0;
+        int curLen = 0;
+        for(int i=0;i<s.length();i++){
+            char c = s.charAt(i);
+            if(memo.containsKey(c)){
+                // System.out.println(i+" "+c);
+                int cur = memo.get(c)+1;
+                pre = cur>pre?cur:pre;
+            }
+            curLen = i-pre+1;
+            max = max<curLen?curLen:max;
+            memo.put(c,i);
+        }
+        if(max == 0)return s.length();
         return max;
     }
     public static void main(String[] args){
