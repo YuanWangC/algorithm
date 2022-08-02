@@ -5,25 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773ddd30-114d-460e-93ab-08078231cfa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic/NineSquareGridInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SlideWindows/LongestOnes1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SlideWindows/LongestOnes3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SlideWindows/LongestOnesOrZeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tree/BiTreeJingXiang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bfs/CountSubIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bfs/NumberOfIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/SingletonInnerClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/InOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/InOutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tree/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/bfs/CourseSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bfs/NumberOfEnclaves.java" beforeDir="false" afterPath="$PROJECT_DIR$/bfs/NumberOfEnclaves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/LinkList/FindCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/LinkList/FindCircle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/LinkList/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/LinkList/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/SlideWindows/LongestNonRepeatSubString.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/SlideWindows/LongestNonRepeatSubString.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/algorithm/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/Basic/InOutTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/Basic/InOutTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/mutiThread/MyRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/mutiThread/MyRunnable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/mutiThread/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/mutiThread/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/mutiThread/newThreadsPrac.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/mutiThread/newThreadsPrac.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/AddMinParentheses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/AddParenthesesDerivation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/Basic/Jiugongge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/RegexMatchDP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/RegexMatchRecursion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/BackspaceStringCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/StringInterleaving.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/parentheses/VaildParentheses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/parentheses/VaildParenthesesGen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/algorithm.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,12 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.NineSquareGridInput">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SingletonInnerClass">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -86,40 +92,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BiTreeJingXiang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BiTreeJingXiang" />
-      <module name="Tree" />
+    <configuration name="MergeTwoLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MergeTwoLists" />
+      <module name="algorithm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestOnes1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LongestOnes1" />
+    <configuration name="RemoveNthNodeFromEndOfList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RemoveNthNodeFromEndOfList" />
+      <module name="LinkList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortestStringWithAllCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ShortestStringWithAllCharacters" />
       <module name="SlideWindows" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestOnes3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LongestOnes3" />
-      <module name="SlideWindows" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LongestOnesOrZeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LongestOnesOrZeros" />
-      <module name="SlideWindows" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NineSquareGridInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.NineSquareGridInput" />
+    <configuration name="SingletonInnerClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPattern.SingletonInnerClass" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="DesignPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,20 +126,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ValidParentheses" />
+      <module name="stack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.BiTreeJingXiang" />
-      <item itemvalue="Application.LongestOnes1" />
-      <item itemvalue="Application.LongestOnes3" />
-      <item itemvalue="Application.LongestOnesOrZeros" />
-      <item itemvalue="Application.NineSquareGridInput" />
+      <item itemvalue="Application.MergeTwoLists" />
+      <item itemvalue="Application.RemoveNthNodeFromEndOfList" />
+      <item itemvalue="Application.ShortestStringWithAllCharacters" />
+      <item itemvalue="Application.SingletonInnerClass" />
+      <item itemvalue="Application.ValidParentheses" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NineSquareGridInput" />
-        <item itemvalue="Application.LongestOnesOrZeros" />
-        <item itemvalue="Application.LongestOnes3" />
-        <item itemvalue="Application.LongestOnes1" />
-        <item itemvalue="Application.BiTreeJingXiang" />
+        <item itemvalue="Application.SingletonInnerClass" />
+        <item itemvalue="Application.ShortestStringWithAllCharacters" />
+        <item itemvalue="Application.ValidParentheses" />
+        <item itemvalue="Application.RemoveNthNodeFromEndOfList" />
+        <item itemvalue="Application.MergeTwoLists" />
       </list>
     </recent_temporary>
   </component>
