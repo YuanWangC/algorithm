@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActualCombat/ActualCombat.iml" filepath="$PROJECT_DIR$/ActualCombat/ActualCombat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hash/Hash.iml" filepath="$PROJECT_DIR$/Hash/Hash.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkList/LinkList.iml" filepath="$PROJECT_DIR$/LinkList/LinkList.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlideWindows/SlideWindows.iml" filepath="$PROJECT_DIR$/SlideWindows/SlideWindows.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tree/Tree.iml" filepath="$PROJECT_DIR$/Tree/Tree.iml" />

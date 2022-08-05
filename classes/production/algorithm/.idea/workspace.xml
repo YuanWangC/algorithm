@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773ddd30-114d-460e-93ab-08078231cfa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DesignPattern/SingletonInnerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/EnergyBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash/AdjustSalary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash/FindAllNumbersDisappearedInAnArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash/FindRepeatNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash/FirstMissingPositive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash/MissingNumberlcci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash/SumOfTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkList/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkList/ReverseLinkedListRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/MergeTwoLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/LinkList/FindCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/LinkList/FindCircle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/LinkList/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/LinkList/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/SlideWindows/LongestNonRepeatSubString.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/SlideWindows/LongestNonRepeatSubString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/AddMinParentheses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/AddParenthesesDerivation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/Basic/Jiugongge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/RegexMatchDP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/RegexMatchRecursion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/BackspaceStringCompare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/StringInterleaving.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/parentheses/VaildParentheses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/String/parentheses/VaildParenthesesGen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/algorithm/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/algorithm/algorithm.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SingletonInnerClass">
+  <component name="RunManager" selected="Application.EnergyBeans">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -92,33 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeTwoLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MergeTwoLists" />
-      <module name="algorithm" />
+    <configuration name="AdjustSalary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AdjustSalary" />
+      <module name="Hash" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveNthNodeFromEndOfList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RemoveNthNodeFromEndOfList" />
-      <module name="LinkList" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShortestStringWithAllCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ShortestStringWithAllCharacters" />
-      <module name="SlideWindows" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingletonInnerClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DesignPattern.SingletonInnerClass" />
+    <configuration name="EnergyBeans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.EnergyBeans" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DesignPattern.*" />
+          <option name="PATTERN" value="Basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,27 +104,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ValidParentheses" />
-      <module name="stack" />
+    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReverseLinkedList" />
+      <module name="LinkList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseLinkedListRange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReverseLinkedListRange" />
+      <module name="LinkList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumOfTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SumOfTwo" />
+      <module name="Hash" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MergeTwoLists" />
-      <item itemvalue="Application.RemoveNthNodeFromEndOfList" />
-      <item itemvalue="Application.ShortestStringWithAllCharacters" />
-      <item itemvalue="Application.SingletonInnerClass" />
-      <item itemvalue="Application.ValidParentheses" />
+      <item itemvalue="Application.AdjustSalary" />
+      <item itemvalue="Application.EnergyBeans" />
+      <item itemvalue="Application.ReverseLinkedList" />
+      <item itemvalue="Application.ReverseLinkedListRange" />
+      <item itemvalue="Application.SumOfTwo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SingletonInnerClass" />
-        <item itemvalue="Application.ShortestStringWithAllCharacters" />
-        <item itemvalue="Application.ValidParentheses" />
-        <item itemvalue="Application.RemoveNthNodeFromEndOfList" />
-        <item itemvalue="Application.MergeTwoLists" />
+        <item itemvalue="Application.EnergyBeans" />
+        <item itemvalue="Application.AdjustSalary" />
+        <item itemvalue="Application.ReverseLinkedListRange" />
+        <item itemvalue="Application.ReverseLinkedList" />
+        <item itemvalue="Application.SumOfTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +181,16 @@
           <url>file://$PROJECT_DIR$/ActualCombat/StringTableTest.java</url>
           <line>6</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ActualCombat/CASTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ActualCombat/CASTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
