@@ -9,18 +9,19 @@ public class QuickSort {
     }
     public void qsort1(int[] arr,int left,int right){
         if(right<=left)return;
-//        int pos = partitionEnd(arr,left,right);
-//        qsort1(arr,left,pos-1);
-//        qsort1(arr,pos+1,right);
+        int pos = partitionStart(arr,left,right);
+        qsort1(arr,left,pos-1);
+        qsort1(arr,pos+1,right);
 
-        int[] pos = ThreepartitionEnd(arr,left,right);
+//        int[] pos = ThreepartitionEnd(arr,left,right);
 //        int[] pos = ThreePartitionLeft(arr,left,right,arr[right]);
-        qsort1(arr,left,pos[0]-1);
-        qsort1(arr,pos[1]+1,right);
+//        qsort1(arr,left,pos[0]-1);
+//        qsort1(arr,pos[1]+1,right);
     }
     public int partitionStart(int[] arr,int left,int right){
         int start = left,end = right;
-        int mid = (left+right)/2;
+//        int mid = (left+right)/2;
+        int mid = start;
         int target = arr[mid];
         swap(arr,mid,left);
         while(left<right){
@@ -33,8 +34,8 @@ public class QuickSort {
             if(left<right)
                 swap(arr,left,right);
         }
-        System.out.println(Arrays.toString(arr));
         swap(arr,right,start);
+        System.out.println(Arrays.toString(arr));
         return left;
     }
 
@@ -53,8 +54,8 @@ public class QuickSort {
             if(left<right)
                 swap(arr,left,right);
         }
-        System.out.println(Arrays.toString(arr));
         swap(arr,right,end);
+        System.out.println(Arrays.toString(arr));
         return right;
     }
 
@@ -161,7 +162,8 @@ public class QuickSort {
 //        for(int i=0;i<k;i++){
 //            arr[i] = in.nextInt();
 //        }
-        int[] arr = {100,12,35,31,24,23,10,55,11};
+//        int[] arr = {100,12,35,31,24,23,10,55,11};
+        int[] arr = {46,79,56,38,40,84};
         System.out.println(Arrays.toString(arr));
         long start1 = System.currentTimeMillis();
         if(arr.length>1)

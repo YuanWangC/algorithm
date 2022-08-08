@@ -1,3 +1,6 @@
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
+
 public class newThreadsPrac {
 
     public static void main(String[] args){
@@ -23,6 +26,10 @@ public class newThreadsPrac {
         t3.currentThread().setPriority(Thread.MAX_PRIORITY);
         t3.start();
         System.out.println("t3:"+t3.currentThread().getPriority());
+        MyCallable t4 = new MyCallable();
+        FutureTask<Integer> f = new FutureTask<>(t4);
+        new Thread(f,"t4").start();
+
 //        t3.run();
 //        try {
 //            Thread.sleep(15);
@@ -43,5 +50,11 @@ class MyRunnable implements Runnable{
     @Override
     public void run(){
         System.out.println("start running new thread with runnable obj!");
+    }
+}
+class MyCallable implements Callable<Integer> {
+    public Integer call(){
+        System.out.println("start running new thread with callable obj!");
+        return 1;
     }
 }
