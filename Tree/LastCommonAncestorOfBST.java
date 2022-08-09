@@ -1,5 +1,8 @@
+import java.util.HashMap;
+
 public class LastCommonAncestorOfBST {
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        HashMap<Integer,Integer>map = new HashMap<>();
         if(root==null)return root;
         if(root==q ||root==p)return root;
 //        统一节点的大小，使p节点小于q节点
