@@ -1,17 +1,23 @@
 package DesignPattern;
 
-public class EhSingleton {
+import java.io.Serializable;
+
+public class EhSingleton implements Serializable {
     private static EhSingleton ehsingleton = new EhSingleton();
-    private EhSingleton(){}
+    private EhSingleton(){
+        if(ehsingleton !=null){
+            throw new RuntimeException("Singleton can't build twice.");
+        }
+        System.out.println("private EhSingleton()");
+    }
     public static EhSingleton getInstance(){
         return ehsingleton;
     }
-    public static void main(String[] args){
-        EhSingleton e = EhSingleton.getInstance();
-        System.out.println(e);
-        EhSingleton e2 = EhSingleton.getInstance();
-        System.out.println(e2);
-        System.out.println(e == e2);
+    public static void otherMethod(){
+        System.out.println("other method");
+    }
+    public Object readResolve(){
+        return ehsingleton;
     }
 }
 
