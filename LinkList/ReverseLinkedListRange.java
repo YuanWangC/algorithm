@@ -11,7 +11,7 @@ public class ReverseLinkedListRange {
             pre = pre.next;
             pos++;
         }
-//        注意此处，不可以移动cur。cur的next指针在变化，可以有效翻转
+//        注意此处，不可以继续移动cur。cur的next指针在变化，下一个元素会自己补上来，可以有效翻转
         while (cur!=null && pos<right){
             ListNode nextNode = cur.next;
             cur.next = nextNode.next;
