@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773ddd30-114d-460e-93ab-08078231cfa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic/EnergyBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hash/AdjustSalary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hash/FindAllNumbersDisappearedInAnArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hash/FindRepeatNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hash/FirstMissingPositive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hash/MissingNumberlcci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hash/SumOfTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkList/ReverseLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkList/ReverseLinkedListRange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern/EhSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/EhSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/Tree/LastCommonAncestorOfBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/Tree/LastCommonAncestorOfBST.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EnergyBeans">
+  <component name="RunManager" selected="Application.EhSingleton">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -84,19 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdjustSalary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AdjustSalary" />
-      <module name="Hash" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EnergyBeans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.EnergyBeans" />
+    <configuration name="EhSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPattern.EhSingleton" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="DesignPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,41 +90,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReverseLinkedList" />
-      <module name="LinkList" />
+    <configuration name="FlattenBTtoLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FlattenBTtoLinkedList" />
+      <module name="Tree" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedListRange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReverseLinkedListRange" />
-      <module name="LinkList" />
+    <configuration name="InorderTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InorderTraversal" />
+      <module name="Tree" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SumOfTwo" />
-      <module name="Hash" />
+    <configuration name="LastCommonAncestorOfBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LastCommonAncestorOfBST" />
+      <module name="Tree" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PathSum" />
+      <module name="Tree" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AdjustSalary" />
-      <item itemvalue="Application.EnergyBeans" />
-      <item itemvalue="Application.ReverseLinkedList" />
-      <item itemvalue="Application.ReverseLinkedListRange" />
-      <item itemvalue="Application.SumOfTwo" />
+      <item itemvalue="Application.EhSingleton" />
+      <item itemvalue="Application.FlattenBTtoLinkedList" />
+      <item itemvalue="Application.InorderTraversal" />
+      <item itemvalue="Application.LastCommonAncestorOfBST" />
+      <item itemvalue="Application.PathSum" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EnergyBeans" />
-        <item itemvalue="Application.AdjustSalary" />
-        <item itemvalue="Application.ReverseLinkedListRange" />
-        <item itemvalue="Application.ReverseLinkedList" />
-        <item itemvalue="Application.SumOfTwo" />
+        <item itemvalue="Application.EhSingleton" />
+        <item itemvalue="Application.FlattenBTtoLinkedList" />
+        <item itemvalue="Application.PathSum" />
+        <item itemvalue="Application.InorderTraversal" />
+        <item itemvalue="Application.LastCommonAncestorOfBST" />
       </list>
     </recent_temporary>
   </component>

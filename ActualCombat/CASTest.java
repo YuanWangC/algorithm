@@ -39,8 +39,8 @@ public class CASTest {
         showResult(t,t1,t2);
     }
     public static void showResult(Test t,Thread t1,Thread t2){
-//        t1.start();
-//        t2.start();
+        t1.start();
+        t2.start();
         System.out.println(t.value);
     }
     public static void main(String[] args){
