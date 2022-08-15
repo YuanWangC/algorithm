@@ -39,32 +39,3 @@ public class TestImportance {
         System.out.println(Arrays.toString(res[5]));
     }
 }
-class Player{
-    int pid;
-    String name;
-}
-class Play {
-    HashMap<Integer, List<Integer>> teams = new HashMap<>();
-
-    public int Create(int pid) {
-        List<Integer> t = new ArrayList<>();
-        t.add(pid);
-        teams.put(pid,t);
-        return pid;
-    }
-    public boolean Request(int pid,int tid) {
-        List<Integer> t = teams.get(tid);
-        if(t.size()==5)return false;
-        t.add(pid);
-        teams.put(pid,t);
-        return true;
-    }
-    public static void main(String[] args){
-        Player[] ps = new Player[10000];
-        for(int i=1;i<10000;i++){
-            ps[i-1] = new Player();
-            ps[i-1].name = "robot"+i;
-            ps[i-1].pid = i;
-        }
-    }
-}
