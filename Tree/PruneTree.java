@@ -17,16 +17,10 @@ public class PruneTree {
     }
     public static void main(String[] args){
         PruneTree obj = new PruneTree();
-        String[] arr = {"1","0","1","0","0","0","1"};
+        String[] arr = {"1","0","1","1","1","0","1"};
         TreeNode root = new TreeNode();
         TreeNode.Build(root ,arr);
         root = obj.pruneTree(root);
-//        TreeNode.Pretravel(root);
-        ConcurrentHashMap<Integer,Integer> memo = new ConcurrentHashMap();
-        memo.put(1,2);
-        int old = memo.put(1,5);
-        int old2 = memo.put(2,5);
-        System.out.println(old);
-        System.out.println(old2);
+        TreeNode.Pretravel(root);
     }
 }

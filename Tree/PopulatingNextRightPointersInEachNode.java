@@ -13,17 +13,20 @@ class Node extends TreeNode{
         this.right = null;
         this.next = null;
     }
-    public static void travel(Node root){
+    public static void travel2(Node root){
+        System.out.println("run here");
         Node cur = root;
 //        需要遍历到叶子结点，所以是cur!=null
         while(cur!=null){
-            // System.out.println(cur.val);
+            System.out.println(cur.val);
             Node temp = cur;
             while(temp!=null){
                 System.out.println(temp.val);
                 temp = temp.next;
             }
-            cur = (Node) cur.left;
+            cur = cur.left;
+            System.out.println("run here");
+            System.out.println(cur.val);
         }
     }
     public static Node layerOrder(String[] s){
@@ -91,11 +94,12 @@ public class PopulatingNextRightPointersInEachNode {
 //        Node.Build(s);    //子类调用自己的方法
 //        System.out.println(root instanceof TreeNode);   //true
 //        子类实例自动转换为父类，可以作为父类方法的形参
-        if(root instanceof TreeNode)
-            TreeNode.Pretravel(root);
+//        if(root instanceof TreeNode)
+//            TreeNode.Pretravel(root);
 
         //子类自己的方法
         Node root2 = obj.connect(root);
-        Node.travel(root2);
+        Node.travel2(root2);
+        System.out.println("run here");
     }
 }
