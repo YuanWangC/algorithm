@@ -36,5 +36,7 @@ public class HouseRobberiii {
         TreeNode.Build(root,arr);
         System.out.println(new HouseRobberiii().rob1(root));
         System.out.println(new HouseRobberiii().rob2(root));
+        System.out.println((int)(2.111*10)/10);
+        System.out.println((int)(2.111*100)/100);
     }
 }
