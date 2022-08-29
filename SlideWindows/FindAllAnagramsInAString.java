@@ -22,7 +22,7 @@ public class FindAllAnagramsInAString {
                     valid++;
             }
 
-            if(right-left>=p.length()){
+            while(right-left>=p.length()){
                 if(valid == need.size()){
                     res.add(left);
                 }
