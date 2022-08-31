@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ActualCombat/ActualCombat.iml" filepath="$PROJECT_DIR$/ActualCombat/ActualCombat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DP/DP.iml" filepath="$PROJECT_DIR$/DP/DP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hash/Hash.iml" filepath="$PROJECT_DIR$/Hash/Hash.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LinkList/LinkList.iml" filepath="$PROJECT_DIR$/LinkList/LinkList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SlideWindows/SlideWindows.iml" filepath="$PROJECT_DIR$/SlideWindows/SlideWindows.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Tree/Tree.iml" filepath="$PROJECT_DIR$/Tree/Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm.iml" filepath="$PROJECT_DIR$/algorithm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bfs/bfs.iml" filepath="$PROJECT_DIR$/bfs/bfs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dfs/dfs.iml" filepath="$PROJECT_DIR$/dfs/dfs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fillpackage/fillpackage.iml" filepath="$PROJECT_DIR$/fillpackage/fillpackage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/graph/graph.iml" filepath="$PROJECT_DIR$/graph/graph.iml" />
-      <module fileurl="file://$PROJECT_DIR$/greedy/greedy.iml" filepath="$PROJECT_DIR$/greedy/greedy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mutiThread/mutiThread.iml" filepath="$PROJECT_DIR$/mutiThread/mutiThread.iml" />
-      <module fileurl="file://$PROJECT_DIR$/simulation/simulation.iml" filepath="$PROJECT_DIR$/simulation/simulation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sort/sort.iml" filepath="$PROJECT_DIR$/sort/sort.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
-      <module fileurl="file://$PROJECT_DIR$/string/string.iml" filepath="$PROJECT_DIR$/string/string.iml" />
     </modules>
   </component>
 </project>
