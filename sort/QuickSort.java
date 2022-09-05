@@ -163,7 +163,7 @@ public class QuickSort {
 //            arr[i] = in.nextInt();
 //        }
 //        int[] arr = {100,12,35,31,24,23,10,55,11};
-        int[] arr = {46,79,56,38,40,84};
+        int[] arr = {134,183,120,146,114,126,167,124,119};
         System.out.println(Arrays.toString(arr));
         long start1 = System.currentTimeMillis();
         if(arr.length>1)
