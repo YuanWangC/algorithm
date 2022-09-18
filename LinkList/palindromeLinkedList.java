@@ -1,3 +1,5 @@
+package LinkList;
+
 public class palindromeLinkedList {
     public static boolean isPalindrome(ListNode head) {
         if(head == null || head.next == null)return true;

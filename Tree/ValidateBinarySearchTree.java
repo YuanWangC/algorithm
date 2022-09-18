@@ -1,3 +1,5 @@
+package Tree;
+
 public class ValidateBinarySearchTree {
 //    用中序遍历是否逆序判断
     TreeNode pre = null;

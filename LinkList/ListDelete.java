@@ -1,3 +1,5 @@
+package LinkList;
+
 public class ListDelete {
     public ListNode del1(ListNode head,int target){
         if(head == null)return head;

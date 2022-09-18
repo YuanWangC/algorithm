@@ -1,3 +1,5 @@
+package Tree;
+
 public class PathSum {
     static boolean flag = false;
     public static void check(TreeNode root,int sum){

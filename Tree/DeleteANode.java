@@ -1,3 +1,5 @@
+package Tree;
+
 public class DeleteANode {
     public TreeNode getMin(TreeNode root){
         while(root.left!=null)root = root.left;

@@ -1,3 +1,4 @@
+package LinkList;
 public class ReverseLinkedListRange {
 //    头插法
     private synchronized ListNode reverseList(ListNode head, int left, int right) {

@@ -1,3 +1,5 @@
+package LinkList;
+
 public class FindCircle {
     int circleLength = 0;
     public ListNode searchCircleIntro(ListNode head){

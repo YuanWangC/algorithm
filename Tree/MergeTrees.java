@@ -1,3 +1,5 @@
+package Tree;
+
 public class MergeTrees {
     public TreeNode mergeTrees1(TreeNode root1, TreeNode root2) {
         if(root1==null && root2==null)return null;

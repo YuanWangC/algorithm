@@ -1,3 +1,5 @@
+package Tree;
+
 public class LastCommonAncestorOfBT {
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null)return null;

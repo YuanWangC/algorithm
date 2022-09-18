@@ -1,3 +1,5 @@
+package LinkList;
+
 public class TheFirstCommonNodeOfTwoLinkedLists {
     static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode cur1 = headA,cur2 = headB;

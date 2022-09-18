@@ -1,3 +1,5 @@
+package Tree;
+
 //将所有二叉树节点转换为链表节点，链表指针为right
 public class FlattenBTtoLinkedList {
     public static void flatten1(TreeNode root) {

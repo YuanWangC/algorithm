@@ -1,3 +1,5 @@
+package Tree;
+
 public class ChangeBTSTreeIntoPlusTree {
     TreeNode pre = null;
     public TreeNode convertBST(TreeNode root) {

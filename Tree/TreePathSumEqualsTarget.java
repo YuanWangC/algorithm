@@ -1,3 +1,5 @@
+package Tree;
+
 public class TreePathSumEqualsTarget {
     public boolean dfs(TreeNode root,int target){
         if(root == null)return false;
